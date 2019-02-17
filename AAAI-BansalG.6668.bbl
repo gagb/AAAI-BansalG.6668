@@ -1,0 +1,252 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Angwin \bgroup et al\mbox.\egroup
+  }{2016}]{angwin2016machine}
+Angwin, J.; Larson, J.; Mattu, S.; and Kirchner, L.
+\newblock 2016.
+\newblock Machine bias: There's software across the country to predict future
+  criminals and it’s biased against blacks.
+\newblock {\em ProPublica}.
+
+\bibitem[\protect\citeauthoryear{Ba and Caruana}{2014}]{ba2014deep}
+Ba, J., and Caruana, R.
+\newblock 2014.
+\newblock Do deep nets really need to be deep?
+\newblock In {\em NIPS},  2654--2662.
+
+\bibitem[\protect\citeauthoryear{Bayati \bgroup et al\mbox.\egroup
+  }{2014}]{bayati2014data}
+Bayati, M.; Braverman, M.; Gillam, M.; Mack, K.~M.; Ruiz, G.; Smith, M.~S.; and
+  Horvitz, E.
+\newblock 2014.
+\newblock Data-driven decisions for reducing readmissions for heart failure:
+  General methodology and case study.
+\newblock {\em PloS one} 9(10).
+
+\bibitem[\protect\citeauthoryear{Bosch}{2009}]{bosch2009software}
+Bosch, J.
+\newblock 2009.
+\newblock From software product lines to software ecosystems.
+\newblock In {\em SPLC},  111--119.
+
+\bibitem[\protect\citeauthoryear{Bousquet and
+  Elisseeff}{2001}]{bousquet2001algorithmic}
+Bousquet, O., and Elisseeff, A.
+\newblock 2001.
+\newblock Algorithmic stability and generalization performance.
+\newblock In {\em NIPS},  196--202.
+
+\bibitem[\protect\citeauthoryear{Carroll and Olson}{1988}]{carroll1988mental}
+Carroll, J.~M., and Olson, J.~R.
+\newblock 1988.
+\newblock Mental models in human-computer interaction.
+\newblock In {\em Handbook of human-computer interaction}. Elsevier.
+\newblock  45--65.
+
+\bibitem[\protect\citeauthoryear{Caruana \bgroup et al\mbox.\egroup
+  }{2015}]{caruana2015intelligible}
+Caruana, R.; Lou, Y.; Gehrke, J.; Koch, P.; Sturm, M.; and Elhadad, N.
+\newblock 2015.
+\newblock Intelligible models for healthcare: Predicting pneumonia risk and
+  hospital 30-day readmission.
+\newblock In {\em KDD},  1721--1730.
+
+\bibitem[\protect\citeauthoryear{DeChurch and
+  Mesmer-Magnus}{2010}]{dechurch-jap10}
+DeChurch, L.~A., and Mesmer-Magnus, J.~R.
+\newblock 2010.
+\newblock The cognitive underpinnings of effective teamwork: A meta-analysis.
+\newblock {\em Journal of Applied Psychology} 95(1):32.
+
+\bibitem[\protect\citeauthoryear{Dynamo}{2017}]{dynamo-MT-ethics17}
+Dynamo.
+\newblock 2017.
+\newblock {\em Guidelines for Academic Requesters}.
+
+\bibitem[\protect\citeauthoryear{Elkan}{2001}]{elkan2001foundations}
+Elkan, C.
+\newblock 2001.
+\newblock The foundations of cost-sensitive learning.
+\newblock In {\em IJCAI}, volume~17,  973--978.
+
+\bibitem[\protect\citeauthoryear{Gaur \bgroup et al\mbox.\egroup
+  }{2016}]{gaur2016effects}
+Gaur, Y.; Lasecki, W.~S.; Metze, F.; and Bigham, J.~P.
+\newblock 2016.
+\newblock The effects of automatic speech recognition quality on human
+  transcription latency.
+\newblock In {\em Proceedings of the 13th Web for All Conference (W4A)}, ~23.
+\newblock ACM.
+
+\bibitem[\protect\citeauthoryear{Gownder \bgroup et al\mbox.\egroup
+  }{2017}]{forrester-17}
+Gownder, J.; Voce, C.; Koetzle, L.; LeClair, C.; Purcell, B.; Sridharan, S.;
+  Garberg, C.; and Lynch, D.
+\newblock 2017.
+\newblock Techradar: Automation technologies, robotics, and {AI} in the
+  workforce.
+\newblock Technical report, Forrester Research.
+
+\bibitem[\protect\citeauthoryear{Grosz and Kraus}{1999}]{grosz1999evolution}
+Grosz, B.~J., and Kraus, S.
+\newblock 1999.
+\newblock The evolution of sharedplans.
+\newblock In {\em Foundations of rational agency}. Springer.
+
+\bibitem[\protect\citeauthoryear{Grosz}{1996}]{grosz1996collaborative}
+Grosz, B.~J.
+\newblock 1996.
+\newblock Collaborative systems ({AAAI-94} presidential address).
+\newblock {\em AI magazine} 17(2):67.
+
+\bibitem[\protect\citeauthoryear{Harutyunyan \bgroup et al\mbox.\egroup
+  }{2017}]{harutyunyan2017multitask}
+Harutyunyan, H.; Khachatrian, H.; Kale, D.~C.; and Galstyan, A.
+\newblock 2017.
+\newblock Multitask learning and benchmarking with clinical time series data.
+\newblock {\em arXiv preprint arXiv:1703.07771}.
+
+\bibitem[\protect\citeauthoryear{Hinton, Vinyals, and
+  Dean}{2015}]{hinton2015distilling}
+Hinton, G.; Vinyals, O.; and Dean, J.
+\newblock 2015.
+\newblock Distilling the knowledge in a neural network.
+\newblock {\em arXiv preprint arXiv:1503.02531}.
+
+\bibitem[\protect\citeauthoryear{Hoff and Bashir}{2015}]{hoff2015trust}
+Hoff, K.~A., and Bashir, M.
+\newblock 2015.
+\newblock Trust in automation: Integrating empirical evidence on factors that
+  influence trust.
+\newblock {\em Human Factors} 57(3):407--434.
+
+\bibitem[\protect\citeauthoryear{Johnson \bgroup et al\mbox.\egroup
+  }{2016}]{johnson2016mimic}
+Johnson, A.~E.; Pollard, T.~J.; Shen, L.; Li-wei, H.~L.; Feng, M.; Ghassemi,
+  M.; Moody, B.; Szolovits, P.; Celi, L.~A.; and Mark, R.~G.
+\newblock 2016.
+\newblock {MIMIC-III}, a freely accessible critical care database.
+\newblock {\em Scientific data} 3.
+
+\bibitem[\protect\citeauthoryear{Kamar, Hacker, and
+  Horvitz}{2012}]{kamar2012combining}
+Kamar, E.; Hacker, S.; and Horvitz, E.
+\newblock 2012.
+\newblock Combining human and machine intelligence in large-scale
+  crowdsourcing.
+\newblock In {\em AAMAS},  467--474.
+
+\bibitem[\protect\citeauthoryear{Kamar}{2016}]{kamar2016directions}
+Kamar, E.
+\newblock 2016.
+\newblock Directions in hybrid intelligence: Complementing {AI} systems with
+  human intelligence.
+\newblock In {\em IJCAI}.
+
+\bibitem[\protect\citeauthoryear{Kirkpatrick \bgroup et al\mbox.\egroup
+  }{2017}]{kirkpatrick2017overcoming}
+Kirkpatrick, J.; Pascanu, R.; Rabinowitz, N.; Veness, J.; Desjardins, G.; Rusu,
+  A.~A.; Milan, K.; Quan, J.; Ramalho, T.; Grabska-Barwinska, A.; et~al.
+\newblock 2017.
+\newblock Overcoming catastrophic forgetting in neural networks.
+\newblock {\em Proceedings of the national academy of sciences}  201611835.
+
+\bibitem[\protect\citeauthoryear{Kulesza \bgroup et al\mbox.\egroup
+  }{2012}]{kulesza2012tell}
+Kulesza, T.; Stumpf, S.; Burnett, M.; and Kwan, I.
+\newblock 2012.
+\newblock Tell me more?: the effects of mental model soundness on personalizing
+  an intelligent agent.
+\newblock In {\em CHI},  1--10.
+\newblock ACM.
+
+\bibitem[\protect\citeauthoryear{Lasecki \bgroup et al\mbox.\egroup
+  }{2012a}]{lasecki2012scribe}
+Lasecki, W.; Miller, C.; Sadilek, A.; Abumoussa, A.; Borrello, D.; Kushalnagar,
+  R.; and Bigham, J.
+\newblock 2012a.
+\newblock Real-time captioning by groups of non-experts.
+\newblock In {\em Proceedings of the 25th annual ACM symposium on User
+  interface software and technology},  23--34.
+\newblock ACM.
+
+\bibitem[\protect\citeauthoryear{Lasecki \bgroup et al\mbox.\egroup
+  }{2012b}]{lasecki2012real}
+Lasecki, W.~S.; Bigham, J.~P.; Allen, J.~F.; and Ferguson, G.
+\newblock 2012b.
+\newblock Real-time collaborative planning with the crowd.
+
+\bibitem[\protect\citeauthoryear{Marsh and Dibben}{2003}]{marsh2003role}
+Marsh, S., and Dibben, M.~R.
+\newblock 2003.
+\newblock The role of trust in information science and technology.
+\newblock {\em Annual Review of Information Science and Technology}
+  37(1):465--498.
+
+\bibitem[\protect\citeauthoryear{Norman}{1988}]{donald1988psychology}
+Norman, D.
+\newblock 1988.
+\newblock {\em The psychology of everyday things}.
+\newblock Basic Books.
+
+\bibitem[\protect\citeauthoryear{Norman}{2014}]{norman2014some}
+Norman, D.~A.
+\newblock 2014.
+\newblock Some observations on mental models.
+\newblock In {\em Mental models}. Psychology Press.
+\newblock  15--22.
+
+\bibitem[\protect\citeauthoryear{O'Cane}{2018}]{tesla:2018}
+O'Cane, S.
+\newblock 2018.
+\newblock Tesla can change so much with over-the-air updates that it’s
+  messing with some owners’ heads.
+\newblock
+  \url{www.theverge.com/2018/6/2/17413732/tesla-over-the-air-software-updates-brakes}.
+
+\bibitem[\protect\citeauthoryear{Spring}{2005}]{spring2005techniques}
+Spring, M.~J.
+\newblock 2005.
+\newblock Techniques for maintaining compatibility of a software core module
+  and an interacting module.
+\newblock US Patent 6,971,093.
+
+\bibitem[\protect\citeauthoryear{Tsantilis}{2009}]{tsantilis2009method}
+Tsantilis, E.
+\newblock 2009.
+\newblock Method and system to monitor software interface updates and assess
+  backward compatibility.
+\newblock US Patent 7,600,219.
+
+\bibitem[\protect\citeauthoryear{Wang \bgroup et al\mbox.\egroup
+  }{2016}]{wang2016deep}
+Wang, D.; Khosla, A.; Gargeya, R.; Irshad, H.; and Beck, A.~H.
+\newblock 2016.
+\newblock Deep learning for identifying metastatic breast cancer.
+\newblock {\em arXiv preprint arXiv:1606.05718}.
+
+\bibitem[\protect\citeauthoryear{Wiens, Guttag, and
+  Horvitz}{2016}]{wiens2016patient}
+Wiens, J.; Guttag, J.; and Horvitz, E.
+\newblock 2016.
+\newblock Patient risk stratification with time-varying parameters: a multitask
+  learning approach.
+\newblock {\em JMLR} 17(1):2797--2819.
+
+\bibitem[\protect\citeauthoryear{Zhou \bgroup et al\mbox.\egroup
+  }{2004}]{zhou2004learning}
+Zhou, D.; Bousquet, O.; Lal, T.~N.; Weston, J.; and Sch{\"o}lkopf, B.
+\newblock 2004.
+\newblock Learning with local and global consistency.
+\newblock In {\em NIPS},  321--328.
+
+\bibitem[\protect\citeauthoryear{Zhou \bgroup et al\mbox.\egroup
+  }{2017}]{zhou2017effects}
+Zhou, J.; Arshad, S.~Z.; Luo, S.; and Chen, F.
+\newblock 2017.
+\newblock Effects of uncertainty and cognitive load on user trust in predictive
+  decision making.
+\newblock In {\em IFIP Conference on Human-Computer Interaction},  23--39.
+\newblock Springer.
+
+\end{thebibliography}
