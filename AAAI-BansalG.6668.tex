@@ -221,7 +221,7 @@ The dissonance $\dissonance$ of $\htwo$ to $\hone$ is a function $\dissonance: x
 \end{equation}
 \end{definition}
 
-\noindent Recall that  $\compatscore(\hone, \htwo)$ is high when both $\hone$ and $\htwo$ are correct (Eqn~\ref{eq:score}).  Dissonance  expresses the opposite notion: measuring if $\hone$ is correct ($\mathbbm{1}$ denotes an indicator function)
+\noindent Recall that  $\compatscore(\hone, \htwo)$ is high when both $\hone$ and $\htwo$ are correct (Equation~\ref{eq:score}).  Dissonance  expresses the opposite notion: measuring if $\hone$ is correct ($\mathbbm{1}$ denotes an indicator function)
 and penalizing by the degree to which $\htwo$ is incorrect.
 Equation~\ref{eq:lossbc} defines the new loss.
 \begin{equation}
@@ -232,14 +232,14 @@ Equation~\ref{eq:lossbc} defines the new loss.
 \noindent Here, $\lambdabc$ encodes the relative weight of dissonance, controlling the additional loss to be assigned to all new errors.
 We refer to this version as {\em new-error dissonance}.
 Just as with classification loss, there are other ways to realize dissonance. We explored two alternatives, which we refer to as {\em imitation} and {\em strict imitation} dissonance.
-Eqn~\ref{eq:diss_imitation} describes the imitation dissonance which measures the log loss between the prediction probabilities of $\hone$ and $\htwo$:
+Equation~\ref{eq:diss_imitation} describes the imitation dissonance which measures the log loss between the prediction probabilities of $\hone$ and $\htwo$:
 \begin{equation}
     \label{eq:diss_imitation}
     \dissonance'(x, y, \hone, \htwo) = \loss(x, \hone, \htwo)
 \end{equation}
 
-\noindent Eqn~\ref{eq:diss_imitation} is used in model distillation~\cite{ba2014deep,hinton2015distilling}, where the aim is to train a shallower, less expensive model by imitating the probabilities of larger, accurate model. Unfortunately, $\dissonance'$ has the effect of nudging \htwo\ to mimic \hone's mistakes as well as its successes.  
-Eqn~\ref{eq:diss_imitation_strict} describes the strict imitation dissonance, which follows a similar intuition but it only adds the log loss between $\hone$ and $\htwo$ when $\hone$ is correct.
+\noindent Equation~\ref{eq:diss_imitation} is used in model distillation~\cite{ba2014deep,hinton2015distilling}, where the aim is to train a shallower, less expensive model by imitating the probabilities of larger, accurate model. Unfortunately, $\dissonance'$ has the effect of nudging \htwo\ to mimic \hone's mistakes as well as its successes.  
+Equation~\ref{eq:diss_imitation_strict} describes the strict imitation dissonance, which follows a similar intuition but it only adds the log loss between $\hone$ and $\htwo$ when $\hone$ is correct.
 \begin{equation}
     \label{eq:diss_imitation_strict}
     \dissonance''(x, y, \hone, \htwo) = \mathbbm{1}(\hone(x) = y) \cdot \loss(x, \hone, \htwo)
