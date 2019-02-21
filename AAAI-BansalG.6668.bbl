@@ -183,6 +183,14 @@ Marsh, S., and Dibben, M.~R.
 \newblock {\em Annual Review of Information Science and Technology}
   37(1):465--498.
 
+\bibitem[\protect\citeauthoryear{Nguyen, Yosinski, and
+  Clune}{2015}]{nguyen2015deep}
+Nguyen, A.; Yosinski, J.; and Clune, J.
+\newblock 2015.
+\newblock Deep neural networks are easily fooled: High confidence predictions
+  for unrecognizable images.
+\newblock In {\em CVPR},  427--436.
+
 \bibitem[\protect\citeauthoryear{Norman}{1988}]{donald1988psychology}
 Norman, D.
 \newblock 1988.
@@ -203,6 +211,12 @@ O'Cane, S.
   messing with some owners’ heads.
 \newblock
   \url{www.theverge.com/2018/6/2/17413732/tesla-over-the-air-software-updates-brakes}.
+
+\bibitem[\protect\citeauthoryear{Reber}{1989}]{reber1989implicit}
+Reber, A.~S.
+\newblock 1989.
+\newblock Implicit learning and tacit knowledge.
+\newblock {\em Journal of experimental psychology: General} 118(3):219.
 
 \bibitem[\protect\citeauthoryear{Spring}{2005}]{spring2005techniques}
 Spring, M.~J.
