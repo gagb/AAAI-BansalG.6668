@@ -40,7 +40,7 @@ Bousquet, O., and Elisseeff, A.
 Carroll, J.~M., and Olson, J.~R.
 \newblock 1988.
 \newblock Mental models in human-computer interaction.
-\newblock In {\em Handbook of human-computer interaction}. Elsevier.
+\newblock In {\em Handbook of Human-Computer Interaction}. Elsevier.
 \newblock  45--65.
 
 \bibitem[\protect\citeauthoryear{Caruana \bgroup et al\mbox.\egroup
@@ -50,6 +50,7 @@ Caruana, R.; Lou, Y.; Gehrke, J.; Koch, P.; Sturm, M.; and Elhadad, N.
 \newblock Intelligible models for healthcare: Predicting pneumonia risk and
   hospital 30-day readmission.
 \newblock In {\em KDD},  1721--1730.
+\newblock ACM.
 
 \bibitem[\protect\citeauthoryear{DeChurch and
   Mesmer-Magnus}{2010}]{dechurch-jap10}
@@ -91,13 +92,13 @@ Gownder, J.; Voce, C.; Koetzle, L.; LeClair, C.; Purcell, B.; Sridharan, S.;
 Grosz, B.~J., and Kraus, S.
 \newblock 1999.
 \newblock The evolution of sharedplans.
-\newblock In {\em Foundations of rational agency}. Springer.
+\newblock In {\em Foundations of Rational Agency}. Springer.
 
 \bibitem[\protect\citeauthoryear{Grosz}{1996}]{grosz1996collaborative}
 Grosz, B.~J.
 \newblock 1996.
 \newblock Collaborative systems ({AAAI-94} presidential address).
-\newblock {\em AI magazine} 17(2):67.
+\newblock {\em AI Magazine} 17(2):67.
 
 \bibitem[\protect\citeauthoryear{Harutyunyan \bgroup et al\mbox.\egroup
   }{2017}]{harutyunyan2017multitask}
@@ -126,7 +127,7 @@ Johnson, A.~E.; Pollard, T.~J.; Shen, L.; Li-wei, H.~L.; Feng, M.; Ghassemi,
   M.; Moody, B.; Szolovits, P.; Celi, L.~A.; and Mark, R.~G.
 \newblock 2016.
 \newblock {MIMIC-III}, a freely accessible critical care database.
-\newblock {\em Scientific data} 3.
+\newblock {\em Scientific Data} 3.
 
 \bibitem[\protect\citeauthoryear{Kamar, Hacker, and
   Horvitz}{2012}]{kamar2012combining}
@@ -149,7 +150,7 @@ Kirkpatrick, J.; Pascanu, R.; Rabinowitz, N.; Veness, J.; Desjardins, G.; Rusu,
   A.~A.; Milan, K.; Quan, J.; Ramalho, T.; Grabska-Barwinska, A.; et~al.
 \newblock 2017.
 \newblock Overcoming catastrophic forgetting in neural networks.
-\newblock {\em Proceedings of the national academy of sciences}  201611835.
+\newblock {\em Proceedings of the National Academy of Sciences}  201611835.
 
 \bibitem[\protect\citeauthoryear{Kulesza \bgroup et al\mbox.\egroup
   }{2012}]{kulesza2012tell}
@@ -166,8 +167,7 @@ Lasecki, W.; Miller, C.; Sadilek, A.; Abumoussa, A.; Borrello, D.; Kushalnagar,
   R.; and Bigham, J.
 \newblock 2012a.
 \newblock Real-time captioning by groups of non-experts.
-\newblock In {\em Proceedings of the 25th annual ACM symposium on User
-  interface software and technology},  23--34.
+\newblock In {\em UIST},  23--34.
 \newblock ACM.
 
 \bibitem[\protect\citeauthoryear{Lasecki \bgroup et al\mbox.\egroup
@@ -175,6 +175,7 @@ Lasecki, W.; Miller, C.; Sadilek, A.; Abumoussa, A.; Borrello, D.; Kushalnagar,
 Lasecki, W.~S.; Bigham, J.~P.; Allen, J.~F.; and Ferguson, G.
 \newblock 2012b.
 \newblock Real-time collaborative planning with the crowd.
+\newblock In {\em AAAI}.
 
 \bibitem[\protect\citeauthoryear{Marsh and Dibben}{2003}]{marsh2003role}
 Marsh, S., and Dibben, M.~R.
@@ -194,29 +195,21 @@ Nguyen, A.; Yosinski, J.; and Clune, J.
 \bibitem[\protect\citeauthoryear{Norman}{1988}]{donald1988psychology}
 Norman, D.
 \newblock 1988.
-\newblock {\em The psychology of everyday things}.
+\newblock {\em The Psychology of Everyday Things}.
 \newblock Basic Books.
 
 \bibitem[\protect\citeauthoryear{Norman}{2014}]{norman2014some}
 Norman, D.~A.
 \newblock 2014.
 \newblock Some observations on mental models.
-\newblock In {\em Mental models}. Psychology Press.
+\newblock In {\em Mental Models}. Psychology Press.
 \newblock  15--22.
-
-\bibitem[\protect\citeauthoryear{O'Cane}{2018}]{tesla:2018}
-O'Cane, S.
-\newblock 2018.
-\newblock Tesla can change so much with over-the-air updates that it’s
-  messing with some owners’ heads.
-\newblock
-  \url{www.theverge.com/2018/6/2/17413732/tesla-over-the-air-software-updates-brakes}.
 
 \bibitem[\protect\citeauthoryear{Reber}{1989}]{reber1989implicit}
 Reber, A.~S.
 \newblock 1989.
 \newblock Implicit learning and tacit knowledge.
-\newblock {\em Journal of experimental psychology: General} 118(3):219.
+\newblock {\em Journal of Experimental Psychology} 118(3):219.
 
 \bibitem[\protect\citeauthoryear{Spring}{2005}]{spring2005techniques}
 Spring, M.~J.

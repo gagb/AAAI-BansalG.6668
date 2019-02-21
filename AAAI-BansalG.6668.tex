@@ -1,165 +1,84 @@
-
-\def\year{2019}\relax
-\documentclass[letterpaper]{article} %DO NOT CHANGE THIS
-\usepackage{aaai19}  %Required
-\usepackage{times}  %Required
-\usepackage{helvet}  %Required
-\usepackage{courier}  %Required
-\usepackage{url}  %Required
-\usepackage{graphicx}  %Required
-\frenchspacing  %Required
-\setlength{\pdfpagewidth}{6.5in}  %Required
-\setlength{\pdfpageheight}{11in}  %Required
-\pdfinfo{
-/Title (Updates in Human-AI Teams: The Performance/Compatibility Tradeoff)
-/Author (Gagan Bansal, Besmira Nushi, Ece Kamar, Daniel S. Weld, Walter S. Lasecki, Eric Horvitz)}
-\setcounter{secnumdepth}{1}  
-
-%%%%%%%% custom commands %%%%%%%%
-\usepackage{subcaption}
-\usepackage{booktabs} % For formal tables
-%\usepackage{float}
-\usepackage{todonotes}
-\usepackage{enumitem}
-\usepackage{bbm}
-\usepackage{url}
-%\renewcommand{\UrlFont}{\ttfamily\small}
-\usepackage{soul}
-\usepackage{relsize}
-
-%\renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
-
-\newcommand{\NOTE}[1]{\marginpar{\em {#1}}}
-\newcommand{\bug}
-    {\mbox{\rule{2mm}{2mm}}}
-\newcommand{\Bug}[1]
-    {\bug \footnote{BUG: {#1}}}
-\newcommand{\QED}{\mbox{$\Box$}}
-\newcommand{\ddt}{\mbox{$\frac{d}{dt}\,$}}  %* no strut
-
-\newcommand{\etal}{\mbox{\it et al.}}
-\newcommand{\etc}{\mbox{\it etc.}}
+\documentclass[letterpaper]{article}
+\usepackage{aaai19}
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage[hyphens]{url}
+\usepackage{graphicx}
+\urlstyle{rm}
+\def\UrlFont{\rm}
+\usepackage{graphicx}
+\frenchspacing
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+% Add additional packages here.
+%
+% The following
+% packages may NEVER be used (this list
+% is not exhaustive:
+% authblk, caption, CJK, float, fullpage, geometry,
+% hyperref, layout, nameref, natbib, savetrees,
+% setspace, titlesec, tocbibind, ulem
+%
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem*{example}{Example}
 \newcommand{\eg}{\mbox{\it e.g.}}
-\newcommand{\ie}{\mbox{\it i.e.}}
-\newcommand{\cf}{\mbox{\it cf.}}
-\newcommand{\Eg}{\mbox{\it E.g.}}
-\newcommand{\Ie}{\mbox{\it I.e.}}
-\newcommand{\?}{\mbox{?}}
-
-
-\newcommand{\DEFN}{\mbox{$\stackrel{\mbox{\tiny def}}{=}$}}
-
-\newcommand{\TT}[1]{\mbox{\tt #1}}
-%\newcommand{\bi}{\begin{list}{$\bullet$}{
-    %\setlength{\leftmargin}{1.5 em}
-    %\setlength{\itemsep}{0 pt}
-    %\setlength{\topsep}{3 pt}
-    %\setlength{\parsep}{3 pt}
-    %\setlength{\partopsep}{0 pt}
-    %\setlength{\labelwidth}{1 em}
-    %\setlength{\labelsep}{0.5 em}
-    %\setlength{\parskip}{0cm}  }}
-\newcommand{\ei}{\end{list}}
-
-\newcommand{\BE}{\begin{enumerate}}
-\newcommand{\EE}{\end{enumerate}}
-
-\newcommand{\tuple}[1]
-        {\mbox{$\langle{#1}\rangle$}}
-\newcommand{\set}[1]
-        {\mbox{$\{{#1}\}$}}
-\newcommand{\size}[1]{\mbox{$\mid\!#1\!\mid$}}
-
-\newcommand{\PROOF}[1]{\mbox{\noindent \proofbegin {#1} \proofend}}
-\newcommand{\proofbegin}{\mbox{\bf Proof: \ }}
-\newcommand{\proofend}{\Math{\Box}}
-%\newcommand{\st}{\mbox{ such that }}
-\newcommand{\wht}{\mbox{ we have that }}
-\newcommand{\entails}{\mbox{$\models$}}
-\newcommand{\yields}{\mbox{$\models$}}
-\newcommand{\dgets}{\mbox{$\leftarrow$}}
-
-
-
-
-
-\newcommand{\initab}{                           % set up tab stops
-\begin{tabbing}
-XXX \= XXXX \= \kill
-}
-\newcommand{\begpub}{
-\begin{quotation}
-\noindent
-}
-%\newcommand{\nextpub}{
-
-%\vspace{2mm}
-%\noindent
-%}
-\newcommand{\finpub}{
-\end{quotation}
-}
-
-
-
-\hyphenation{non-de-ter-mi-nis-tic-al-ly non-de-ter-mi-nis-tic
-exis-ten-tial-ly quan-tified se-lec-tion exis-ting in-stan-tiated
-uni-vers-al-ly es-tab-lish in-con-sis-tent class-ifier}
-
-
-
-% Notation macros
 \newcommand{\name}{AI-advised human decision making}
-\newcommand{\plat}{{\sc Caja}}
+\usepackage{enumitem}
+\newtheorem*{definition}{Definition}
 \newcommand{\hone}{\mbox{$h_1$}}
 \newcommand{\htwo}{\mbox{$h_2$}}
 \newcommand{\dtrainone}{\mbox{$D_1$}}
 \newcommand{\dtraintwo}{\mbox{$D_2$}}
-\newcommand{\dtrain}{\mbox{$D_{\text{train}}$}}  % use of \mbox means macro will work both inside or outside of math mode
-\newcommand{\dtest}{\mbox{$D_{\text{test}}$}}
 \newcommand{\compatscore}{\mathcal{C}}
 \newcommand{\loss}{L}
 \newcommand{\lossbc}{\loss_c}
 \newcommand{\lambdabc}{\lambda_c}
 \newcommand{\dissonance}{\mathcal{D}}
+\newcommand{\ie}{\mbox{\it i.e.}}
+\usepackage{bbm}
+\newcommand{\plat}{{\sc Caja}}
+\usepackage{subcaption}
 \newcommand{\err}{\textit{err}}
+\newcommand{\etal}{\mbox{\it et al.}}
 
-
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amssymb}
-\newtheorem*{definition}{Definition}
-\newtheorem*{example}{Example}
-
+%
+% PDFINFO
+% You are required to complete the following
+% for pass-through to the PDF.
+% No LaTeX commands of any kind may be
+% entered. The parentheses and spaces
+% are an integral part of the
+% pdfinfo script and must not be removed.
+%
+\pdfinfo{
+/Title (Updates in Human-AI Teams: The Performance/Compatibility Tradeoff)
+/Author (Gagan Bansal, Besmira Nushi, Ece Kamar, Daniel S. Weld, Walter S. Lasecki, Eric Horvitz)
+}
+%
+% Section Numbers
+% Uncomment if you want to use section numbers
+% and change the 0 to a 1 or 2
+% \setcounter{secnumdepth}{0}
+% Title and Author Information Must Immediately Follow
+% the pdfinfo within the preamble
+%
 \title{Updates in Human-AI Teams:\\ Understanding and Addressing the Performance/Compatibility Tradeoff}
-% \author{Submission: 6666}
-\author{
-Gagan Bansal,\textsuperscript{\rm 1}
-Besmira Nushi,\textsuperscript{\rm 2}
-Ece Kamar,\textsuperscript{\rm 2}
-Daniel S. Weld,\textsuperscript{\rm 1}
-Walter S. Lasecki,\textsuperscript{\rm 3}
-Eric Horvitz\textsuperscript{\rm 2}\\
+\author{Gagan Bansal,\textsuperscript{\rm 1} Besmira Nushi,\textsuperscript{\rm 2} Ece Kamar,\textsuperscript{\rm 2} Daniel S. Weld,\textsuperscript{\rm 1} Walter S. Lasecki,\textsuperscript{\rm 3} Eric Horvitz\textsuperscript{\rm 2}\\
 \textsuperscript{\rm 1}University of Washington,
 \textsuperscript{\rm 2}Microsoft Research,
 \textsuperscript{\rm 3}University of Michigan
 }
 
-
+ %
 \begin{document}
 \maketitle
 \begin{abstract}
-
 AI systems are being deployed to support human decision making in high-stakes domains such as healthcare and criminal justice. In many cases, the human and AI form a team, in which the human makes decisions after reviewing the AI's inferences. A successful partnership requires that the human develops insights into the performance of the AI system, including its failures. We study the influence of {\em updates} to an AI system in this setting. While updates can increase the AI's predictive performance, they may also lead to behavioral changes that are at odds with the user's prior experiences and confidence in the AI's inferences. We show that updates that increase AI performance may actually hurt {\em team} performance. 
 We introduce the notion of the {\em compatibility} of an AI update with prior user experience and present methods for studying the role of compatibility in human-AI teams. 
 Empirical results on three high-stakes classification tasks show that current machine learning algorithms do not produce compatible updates. We propose a re-training objective to improve the compatibility of an update by penalizing new errors. The objective offers full leverage of the performance/compatibility tradeoff across different datasets, enabling more compatible yet accurate updates.
-
 \end{abstract}
-
-%\keywords{Human-AI teams, AI safety and reliability, mental models, explainable AI} 
-
-\maketitle
-
 
 \section{Introduction}
 
@@ -187,7 +106,7 @@ While the AI has improved by 3\%, the doctor is unaware of the new errors, and a
 \end{example}
 
 This example is motivated by real-world AI applications for reducing patient readmissions and other costly outcomes in healthcare~\cite{bayati2014data,wiens2016patient,caruana2015intelligible}, and motivates the need for reducing the cost of disruption caused by updates that violate  %incompatible with 
-users' mental models. The problem with updates extends to numerous AI-advised human decision-making settings; similar challenges have been observed during over-the-air updates in the Tesla autopilot~\cite{tesla:2018}, and  analogous issues arise in a variety of other settings when AI services 
+users' mental models. The problem with updates extends to numerous AI-advised human decision-making settings; similar challenges have been observed during over-the-air updates in the Tesla autopilot\footnote{\url{www.theverge.com/2018/6/2/17413732/tesla-over- the-air-software-updates-brakes.}}, and  analogous issues arise in a variety of other settings when AI services 
 being consumed by third-party applications, are updated.
 
 Despite these problems, developers have almost exclusively optimized for AI performance.  Retraining techniques largely ignore important details about human-AI teaming, and the mental model that humans develop from interacting with the system. %  faithful to previous successful human-AI interactions. 
@@ -243,7 +162,7 @@ Such updates presumably improve the AI's performance on a validation set, but th
 
 In software engineering, an update is \emph{backward compatible} if the updated system can support legacy software.
 By analogy, we define that an update to an AI component is {\em locally compatible} with a user's mental model if it does not introduce new errors and the user, even after the update, can safely trust the AI's recommendations. 
-}
+
 
 \begin{definition}[\textsc{Locally-Compatible Update}]
 Let $m(x)$ denote a mental model that dictates the user's trust of the AI on input $x$.  Let $A(x,u)$ denote whether $u$ is the appropriate action for input $x$. 
@@ -473,7 +392,7 @@ and note its performance and compatibility score. We train both classifiers by m
 
 \noindent {\bfseries Q4: }{\em Does there exist a tradeoff between the performance and the compatibility of an update to AI?}\\
 \noindent For Q4 (and Q5), we learn the second classifier $\htwo$ by minimizing $\lossbc$. As $\lossbc$ depends also on the first classifier, we make its prediction available to the learner. We vary $\lambdabc$ and summarize the resulting performance and compatibility scores across different datasets for the logistic regression and multi-layer perceptron classifiers in Figure~\ref{fig:diss} and for different definitions of dissonance (discussed in Q5). 
-The figure shows that there exists a tradeoff between the performance of $\htwo$ and its compatibility to $\hone$. This tradeoff is generally more flexible (flat) in the first half of the curves. This shows that, at the very least, one can choose to train via $\lossbc$ and deploy a more compatible update without significant loss in accuracy. Although such updates are not fully compatible, they might still be relevant to be picked by the developer if the update is supported by efficient explanation techniques that can help users to better understand how the model has changed. In these cases, a more compatible update would also reduce the effort of user (re)training. In the second half, the tradeoff becomes more evident. High compatibility can sacrifice predictive performance. Look-up summaries similar to graphs shown in Figure~\ref{fig:diss} are an insightful tool for ML developers that can guide them select an accurate yet compatible model based on the specific domain requirements. \\\\
+The figure shows that there exists a tradeoff between the performance of $\htwo$ and its compatibility to $\hone$. This tradeoff is generally more flexible (flat) in the first half of the curves. This shows that, at the very least, one can choose to train via $\lossbc$ and deploy a more compatible update without significant loss in accuracy. Although such updates are not fully compatible, they might still be relevant if the update is supported by efficient explanation techniques that can help users to better understand how the model has changed. In these cases, a more compatible update would also reduce the effort of user (re)training. In the second half, the tradeoff becomes more evident. High compatibility can sacrifice predictive performance. Look-up summaries similar to graphs shown in Figure~\ref{fig:diss} are an insightful tool for ML developers that can guide them select an accurate yet compatible model based on the specific domain requirements. \\\\
 
 \noindent {\bfseries Q5: }{\em What is the relative performance of the different dissonance functions?}\\
  Figure~\ref{fig:diss} compares the performance of the new-error dissonance function ($\dissonance$) with the imitation-based dissonances ($\dissonance'$  and  $\dissonance''$). As anticipated, $\dissonance$ performs  best on all  three domains. The definitions inspired by model distillation, $\dissonance'$ and $\dissonance''$,  assume that \hone\ is calibrated, and more accurate. Therefore, $\htwo$ needs to remain faithful to only the correct regions of a less accurate model $\hone$. If these assumptions are violated, $\htwo$ overfits to non-calibrated confidence scores of $\hone$, which hurts performance.
@@ -525,7 +444,9 @@ We thank  M.  Ribeiro,  S.  Tan,  X.
 Zhang,  R.  Caruana,  M.  Czerwinski,  J.  Suh,  M.  Joshi,  J.
 Bragg, and anonymous reviewers for helpful feedback. This work was
 was supported by Microsoft Research, ONR grant N00014-18-1-2193, the future of Life foundation and the WRF/Cable Professorship.
+
+% References and End of Paper
+% These lines must be placed at the end of your paper
 \bibliography{main}
 \bibliographystyle{aaai}
 \end{document}
-
